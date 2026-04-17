@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/media__1776031444887.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presley Barbearia</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <img src="/media__1776031444887.png" alt="Presley Barbearia Logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="#hero">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#services">Serviços</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#contact" class="btn btn-primary">Agendar Horário</a>
+        </nav>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+      <nav class="mobile-nav-links">
+        <a href="#hero" class="mobile-link">Início</a>
+        <a href="#about" class="mobile-link">Sobre</a>
+        <a href="#services" class="mobile-link">Serviços</a>
+        <a href="#gallery" class="mobile-link">Galeria</a>
+        <a href="#contact" class="btn btn-primary mobile-link">Agendar Horário</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <!-- The background logic is handled in CSS so we can layer -->
+        <img src="/premium_geometric_background_1776030381737.png" class="bg-pattern" alt="" />
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content fade-in-up">
+          <span class="subtitle">Elegância & Tradição</span>
+          <h1 class="title">Sua Experiência Premium de Barbearia</h1>
+          <p class="description">Mais do que um corte, um momento de cuidado pessoal. Venha para a Presley Barbearia e renove seu estilo com profissionais de excelência.</p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Conhecer Serviços</a>
+            <a href="#gallery" class="btn btn-secondary">Ver Galeria</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper fade-in-up delay-1">
+          <div class="image-frame">
+            <img src="/barber_hero_image_1776030418481.png" alt="Barbeiro em ação" />
+          </div>
+          <div class="floating-badge">
+            <span class="stars">★★★★★</span>
+            <span class="badge-text">Profissionais Premium</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container about-container">
+        <div class="about-image reveal-left">
+          <img src="/barber_interior_gallery_1776030514880.png" alt="Interior da barbearia" />
+          <div class="experience-box">
+            <span class="number">10+</span>
+            <span class="text">Anos de<br>Experiência</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-subtitle">Nossa História</span>
+          <h2 class="section-title">A Arte da Barbearia Clássica Redefinida</h2>
+          <p>Na Presley Barbearia, nós acreditamos que o cuidado masculino é uma arte. Nosso espaço foi projetado para oferecer a você um refúgio do dia a dia, onde a tradição da barbearia clássica se encontra com as técnicas mais modernas.</p>
+          <p>Nossos mestres barbeiros são apaixonados pelo que fazem, garantindo um resultado impecável adaptado ao seu estilo pessoal.</p>
+          <ul class="features-list">
+            <li>Ambiente Climatizado e Premium</li>
+            <li>Produtos Originais de Alta Qualidade</li>
+            <li>Atendimento Personalizado</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-dark" id="services">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="section-subtitle">O Que Oferecemos</span>
+          <h2 class="section-title">Nossos Serviços Premium</h2>
+          <p class="section-desc">Descubra nossa gama de serviços desenhados para realçar o seu melhor visual.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card reveal-up delay-1">
+            <div class="service-img">
+              <img src="/barber_service_haircut_1776030463997.png" alt="Corte de Cabelo" />
+              <div class="service-price">R$ 55</div>
+            </div>
+            <div class="service-info">
+              <h3>Corte Clássico & Moderno</h3>
+              <p>Consultoria de visagismo, lavagem especial e finalização impecável com produtos premium.</p>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card reveal-up delay-2">
+            <div class="service-img">
+              <img src="/barber_service_beard_1776030449101.png" alt="Barboterapia" />
+              <div class="service-price">R$ 45</div>
+            </div>
+            <div class="service-info">
+              <h3>Barboterapia Premium</h3>
+              <p>Ritual com toalha quente, espuma aquecida, óleo relaxante e modelagem com navalha.</p>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card reveal-up delay-3">
+            <div class="service-img">
+              <img src="/barber_hero_image_1776030418481.png" alt="Combo" style="filter: grayscale(100%); object-position: top;" />
+              <div class="service-price">R$ 90</div>
+            </div>
+            <div class="service-info">
+              <h3>O Pacote Executivo</h3>
+              <p>A experiência completa: Corte de cabelo elegante alinhado com a Barboterapia Premium.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section class="contact" id="contact">
+      <div class="contact-overlay"></div>
+      <div class="container contact-container reveal-up">
+        <h2>Pronto Para Renovar Seu Estilo?</h2>
+        <p>Agende seu horário agora e desfrute de um momento exclusivo feito para você.</p>
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-primary btn-large">Agendar via WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <img src="/media__1776031444887.png" alt="Logo Presley Barbearia" class="footer-logo" />
+          <p>Elevando o padrão do grooming masculino todos os dias.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <a href="#hero">Início</a>
+          <a href="#about">Sobre nós</a>
+          <a href="#services">Serviços</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <p>Rua da Elegância, 123</p>
+          <p>Centro, Cidade - UF</p>
+          <p>contato@presleybarbearia.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Presley Barbearia. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
